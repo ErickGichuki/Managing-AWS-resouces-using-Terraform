@@ -19,8 +19,3 @@ resource "aws_instance" "my_instance" {
     }
 }
 
-# Output variable for public ip address
-output "public_ip" {
-    description = "Public ip address of the EC2 instance"
-    value = aws_instance.my_instance.public_ip
-}
