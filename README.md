@@ -13,12 +13,3 @@
 ### Set up the EC2 instance
  - So far there's a module for EC2 instance creation.
 
-### Setup 
- - You neeed to have AWS CLI configured or else you can use GitHub codespaces though they have a limitation of 1 month.
- - Terraform should be installed on your machine.
-
-### Terraform lifecylce commands
- - terraform init
- - terraform plan
- - terraform apply
- - terraform destroy
