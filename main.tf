@@ -12,6 +12,7 @@ provider "aws" {
 variable "ami_id" {
     description = "EC2 ami"
     type = string
+    default = "ami-06b21ccaeff8cd686"
 }
 
 # Input variable for the type of instance
@@ -25,8 +26,10 @@ variable "instance_type" {
 resource "aws_instance" "my_instance" {
     ami = var.ami_id
     instance_type = var.instance_type
-    tag = {
-        Name = "Instance"
+    provider = aws.us-east-1
+
+    tags = {
+        Name = "EC2 via terra"
     }
 }
 
