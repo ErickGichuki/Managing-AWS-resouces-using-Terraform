@@ -9,23 +9,21 @@ provider "aws" {
 }
 
 # Input variable for AMI
-variable "ami_id" {
+variable "ami_value" {
     description = "EC2 ami"
     type = string
-    default = "ami-06b21ccaeff8cd686"
 }
 
 # Input variable for the type of instance
-variable "instance_type" {
+variable "instance_type_value" {
     description = "EC2 instance type"
     type = string
-    default = "t2.micro"
 }
 
 # Create the aws instance resource
 resource "aws_instance" "my_instance" {
-    ami = var.ami_id
-    instance_type = var.instance_type
+    ami = var.ami_value
+    instance_type = var.instance_type_value
     provider = aws.us-east-1
 
     tags = {
