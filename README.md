@@ -1,7 +1,9 @@
 # EC2-instance-via-IaC
 
-# Using Input variables
+## Using Input variables
 
-# Utilizing the power of output vars
+## Utilizing the power of output vars
 
-# Mult
+## Multi region
+
+## Set up the EC2 instance
