@@ -1,21 +1,9 @@
-# Multi Region
 provider "aws" {
-    alias = "us-east-1"
-    region = "us-east-1"
-}
-provider "aws" {
-    alias = "us-west-2"
-    region = "us-west-2"
+  region = "us-east-1"
 }
 
-# Create the aws instance resource
-resource "aws_instance" "my_instance" {
-    ami = var.ami_value
-    instance_type = var.instance_type_value
-    provider = aws.us-east-1
-
-    tags = {
-        Name = "EC2 via terra"
-    }
+module "ec2_instance" {
+  source = "./modules/ec2"
+  ami_value = "ami-06b21ccaeff8cd686"
+  instance_type_value = "t2.micro"
 }
-
