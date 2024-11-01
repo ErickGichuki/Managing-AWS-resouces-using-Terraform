@@ -13,3 +13,8 @@
 ### Set up the EC2 instance
  - So far there's a module for EC2 instance creation.
 
+## Remote Backend
+
+### Use S3 Bucket
+ - We know that statefile is the heart of terraform but when there are secrets, api tokens those become sesnsitive info and we need to get a way to avoid exposing the file to the public.
+ - We use the s3 bucket to store the info that is usually in a statefile.
