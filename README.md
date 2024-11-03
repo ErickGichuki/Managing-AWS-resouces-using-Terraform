@@ -18,3 +18,7 @@
 ### Use S3 Bucket
  - We know that statefile is the heart of terraform but when there are secrets, api tokens those become sesnsitive info and we need to get a way to avoid exposing the file to the public.
  - We use the s3 bucket to store the info that is usually in a statefile.
+
+### Workspaces
+ - Have introduced the concept of workspaces for managing multiple environments in a single infrastructure.
+ - The 3 envs are dev, stage and prod.
