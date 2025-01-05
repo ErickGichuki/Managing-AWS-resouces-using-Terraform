@@ -1,7 +1,7 @@
 # Working with Workspaces/Modules/Variables/Remotebackend
 
-### Workspaces are used when managing multiple environments in a single infranstructure.
- - Lets say we have 3 env; dev, stage and prod and the type of instances is different for all of them how will you do this? Workspaces come in now. 
+### Workspaces are used when managing multiple environments in a single infrastructure.
+ - Lets say we have 3 env; dev, stage and prod and the type of instances is different for all of them how will you do this? Workspaces come into picture. 
  - To create a workspace you run ```terraform workspace new``` to switch to a particular workspace run ```terraform workspace select```.
  - For this particular project we'll have 3 environments where 3 instances will be created.
 
